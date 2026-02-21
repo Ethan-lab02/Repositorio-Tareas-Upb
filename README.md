@@ -6,6 +6,6 @@
 de APIs usando la tecnolía de Node.js, y express.
 
 **Fecha**: 09-feb-2026
-**Autor**: Fabian Hernandez ceja
+**Autor**: Itamar Abdi May Avila
 
 *Universidad Politecnica de Bacalar*
