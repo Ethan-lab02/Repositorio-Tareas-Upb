@@ -27,7 +27,7 @@ exports.register = async (req, res) => {
     const passwordHash = await bcrypt.hash(password, saltRounds);
 
     const result = await pool.query(
-      'INSERT INTO usuarios (nombre, correo, password) VALUES ($1, $2, $3) RETURNING id_usuarios, nombre, correo',
+      'INSERT INTO usuarios (nombre, correo, password) VALUES ($1, $2, $3) RETURNING id_usuario, nombre, correo',
       [nombre, correo.toLowerCase(), passwordHash]
     );
 
@@ -87,7 +87,7 @@ exports.login = async (req, res) => {
     //  GENERAR TOKEN
     const token = jwt.sign(
       {
-        id_usuarios: usuario.id_usuario,
+        id_usuario: usuario.id_usuario,
         correo: usuario.correo
       },
       process.env.JWT_SECRET,

@@ -15,6 +15,7 @@ http://localhost:3000/api/tareas/estado/pendiente GET
 http://localhost:3000/api/tareas/estado/vencidas GET
 http://localhost:3000/api/tareas/estado/completadas GET
 */
+
 // Crear una nueva tarea
 router.post('/', verificarToken, controller.crearTarea);
 
