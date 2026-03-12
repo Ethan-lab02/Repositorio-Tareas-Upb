@@ -6,7 +6,6 @@
 de APIs usando la tecnolía de Node.js, y express.
 
 ### Herramientas
-
 | Herramienta | Versión | Descripción |
 | :--- | :---: | :--- |
 | **Express** | `^5.2.1` | Framework web minimalista para Node.js, utilizado para crear las rutas y manejar peticiones HTTP. |
@@ -26,25 +25,6 @@ de APIs usando la tecnolía de Node.js, y express.
 | **Horarios** | `/api/horarios` | `horarios.routes.js` |
 | **Tareas** | `/api/tareas` | `tareas.routes.js` |
 
-# Backend Project - API Node.js
-
-Este es el repositorio del backend para el proyecto **"backend"**. Está construido utilizando Node.js y un conjunto de librerías modernas para garantizar seguridad, escalabilidad y una conexión eficiente a bases de datos relacionales.
-
-## 🛠️ Herramientas y Dependencias
-
-A continuación se detallan las tecnologías principales utilizadas en el desarrollo de este servidor:
-
-| Herramienta | Versión | Descripción |
-| :--- | :---: | :--- |
-| **Express** | `^5.2.1` | Framework web para manejar rutas y peticiones HTTP. |
-| **PostgreSQL (pg)** | `^8.19.0` | Cliente para interactuar con la base de datos PostgreSQL. |
-| **JSON Web Token** | `^9.0.3` | Manejo de autenticación basada en tokens. |
-| **Bcrypt** | `^6.0.0` | Hashing de contraseñas para seguridad de usuarios. |
-| **Dotenv** | `^17.3.1` | Gestión de variables de entorno (.env). |
-| **CORS** | `^2.8.6` | Configuración de acceso desde dominios externos. |
-| **Nodemon** | `^3.1.14` | Reinicio automático del servidor en desarrollo. |
-
----
 
 ## Guía de Endpoints (API Reference)
 
