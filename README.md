@@ -80,7 +80,43 @@ Todos los endpoints (excepto Autenticación) requieren el encabezado:
 
 ---
 
-**Fecha**: 09-feb-2026
+## Frontend (Cliente)
+Este proyecto cuenta con una interfaz moderna y responsiva construida con **React** y **Vite**, diseñada para gestionar tareas y horarios de manera eficiente.
+
+### Tecnologías Utama
+| Herramienta | Versión | Descripción |
+| :--- | :---: | :--- |
+| **React** | `^18.3.1` | Biblioteca para construir la interfaz de usuario. |
+| **Vite** | `^5.3.4` | Herramienta de construcción rápida para el frontend. |
+| **React Router** | `^6.24.1` | Manejo de rutas y navegación protegida. |
+| **Axios** | `^1.7.2` | Cliente HTTP para consumir los servicios de la API. |
+| **Lucide React** | `^0.400.0` | Set de iconos vectoriales para mejorar la estética visual. |
+| **React Big Calendar** | `^1.13.1` | Componente para la visualización de tareas en formato calendario. |
+| **Date-fns** | `^3.6.0` | Manipulación y formateo de fechas. |
+
+### Arquitectura y Estructura
+La aplicación está organizada siguiendo las mejores prácticas de React:
+- **API Layer (`src/api/`)**: Centraliza todas las peticiones al backend (Materias, Tareas, Auth, etc.).
+- **Context API (`src/context/`)**: Gestiona el estado global de autenticación y persistencia del token JWT.
+- **Componentes (`src/components/`)**: Elementos reutilizables como el sistema de Layout, Modales y rutas protegidas (`ProtectedRoute`).
+- **Páginas (`src/pages/`)**: Contiene las vistas principales como Login, Registro, Gestión de Materias, Tareas, Periodos y Calendario.
+
+### Funcionalidades Clave
+1.  **Autenticación**: Registro e inicio de sesión seguro con manejo de tokens.
+2.  **Gestión de Periodos y Materias**: CRUD completo para organizar el ciclo escolar.
+3.  **Sistema de Tareas**: Seguimiento de tareas pendientes, completadas y vencidas.
+4.  **Horario Semanal**: Visualización dinámica de clases con colores personalizados por materia.
+5.  **Calendario Interactivo**: Vista mensual de compromisos y entregas de tareas.
+
+### Instalación y Ejecución
+Para ejecutar el frontend localmente:
+1. Navega a la carpeta del frontend: `cd frontend`
+2. Instala las dependencias: `npm install`
+3. Inicia el servidor de desarrollo: `npm run dev`
+
+---
+
+**Fecha**: 18-mar-2026
 **Autor**: Itamar Abdi May Avila
 
 *Universidad Politecnica de Bacalar*
